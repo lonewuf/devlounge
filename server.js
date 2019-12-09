@@ -35,7 +35,7 @@ app.use('/api/profile', profile);
 app.use('/api/posts', posts);
 
 app.get('')
-process.env['NODE_ENV'] = 'production';
+process.env['NODE_ENV'] = 'development';
 // Server static assets if in production
 if (process.env.NODE_ENV === 'production') {
   // Set static folder
